@@ -12,6 +12,8 @@
   --container-color: #fafafa;
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
+  --project-color: #00509d;
+  --company-color: #01579b;
 
   /* Font and typography */
   --body-font: 'Poppins', sans-serif;
@@ -54,6 +56,8 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
+  --project-color: #00b4d8;
+  --company-color: #118ab2;
 }
 
 
@@ -123,7 +127,7 @@ body.dark-theme{
 }
 
 .company_name {
-  color: #01579B;
+  color: var(--company-color);
 }
 
 .change-theme:hover{
@@ -286,6 +290,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--project-color);
+}
+
+a:visited {
+  color: var(--project-color);
 }
 
 img {
